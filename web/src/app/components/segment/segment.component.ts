@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'components-segment',
+  selector: 'cc-segment',
   templateUrl: './segment.component.html',
   styleUrls: ['./segment.component.scss']
 })
