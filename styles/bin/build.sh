@@ -2,10 +2,15 @@
 
 set -e
 
+flags="src/styles.scss"
+
 if [[ $* == *--production* ]]; then
-    ./node_modules/.bin/node-sass --output public/css --output-style compressed src/styles.scss
+    flags="--output-style compressed src/styles.scss"
 elif [[ $* == *--watch* ]]; then
-    ./node_modules/.bin/node-sass --output public/css --watch --recursive --source-map true src/styles.scss
-else
-    ./node_modules/.bin/node-sass --output public/css src/styles.scss
+    flags="--watch --recursive --source-map true src/styles.scss"
 fi
+
+./node_modules/.bin/node-sass                        \
+    --output public/css                              \
+    --importer=node_modules/node-sass-tilde-importer \
+    ${flags}
