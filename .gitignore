@@ -33,3 +33,8 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+# Styles project
+/styles/build
+/styles/node_modules
+/styles/public
