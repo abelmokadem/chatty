@@ -1,2 +1,10 @@
 // Todo: fix node sass importer for node_modules
 @import "../../node_modules/normalize.css/normalize";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}

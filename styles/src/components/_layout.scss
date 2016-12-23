@@ -1,0 +1,26 @@
+.layout {
+  $sidebar-background-color: $color-ui-dark-primary;
+  $sidebar-color: $color-ui-dark-text;
+
+  height: 100%;
+  display: flex;
+
+  &__sidebar {
+    color: $sidebar-color;
+    background: $sidebar-background-color;
+    max-width: 300px;
+
+    @media screen and (max-width: $breakpoint-sm-max) {
+      position: relative;
+      left: -100%;
+    }
+
+    flex: 1;
+  }
+
+  &__main {
+    position: relative;
+    background-size: cover;
+    flex: 1;
+  }
+}
