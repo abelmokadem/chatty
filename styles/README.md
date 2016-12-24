@@ -34,4 +34,5 @@ Visit `http://localhost:3000` to see the style guide.
 |   +-- tools           # Mixins
 +-- .babelrc            # Babel configuration
 +-- package.json        # 🤓
++-- yarn.lock           # 🤓
 ```
