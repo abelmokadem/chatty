@@ -22,7 +22,7 @@
 /web/connect.lock
 /web/coverage/*
 /web/libpeerconnection.log
-npm-debug.log
+npm-debug.log*
 testem.log
 /web/typings
 
