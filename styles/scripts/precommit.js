@@ -6,4 +6,3 @@ async function precommit() {
 }
 
 run(precommit);
-

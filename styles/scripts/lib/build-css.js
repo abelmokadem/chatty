@@ -2,7 +2,7 @@ import sass from 'node-sass';
 import path from 'path';
 import fsp from 'fs-promise';
 
-export async function build() {
+export async function buildCss() {
     await fsp.ensureDir(path.join(process.cwd(), 'public/css'));
 
     return new Promise((resolve, reject) => {
@@ -23,4 +23,4 @@ export async function build() {
     });
 }
 
-export default build;
+export default buildCss;

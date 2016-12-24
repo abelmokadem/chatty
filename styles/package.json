@@ -22,6 +22,6 @@
   "scripts": {
     "precommit": "babel-node scripts/precommit.js",
     "start": "babel-node scripts/start.js",
-    "build": "./bin/build.sh"
+    "build": "babel-node scripts/build.js"
   }
 }
