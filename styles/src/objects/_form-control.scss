@@ -4,39 +4,21 @@
 
     $border-color: darken($color-ui-primary, 10%);
 
+    box-sizing: border-box;
+    height: 38px;
+    padding: 6px 10px;
+
+    border: 1px solid lighten($border-color, 8.8%);
+    border-radius: $base-radius;
+    background-color: #fff;
+    box-shadow: none;
+    appearance: none;
+
     &--textarea
     {
         min-height: 65px;
         padding-top: 6px;
         padding-bottom: 6px;
-
-        appearance: none;
-    }
-
-    &--textarea,
-    &--select
-    {
-        box-sizing: border-box;
-        height: 38px;
-        padding: 6px 10px;
-
-        border: 1px solid lighten($border-color, 8.8%);
-        border-radius: $base-radius;
-        background-color: #fff;
-        box-shadow: none;
-
-        &:focus
-        {
-            border: 1px solid $color-ui-primary;
-            outline: 0;
-        }
-    }
-
-    &--input
-    {
-        border: 1px solid $color-ui-primary;
-
-        appearance: none;
     }
 
     &--radio,
