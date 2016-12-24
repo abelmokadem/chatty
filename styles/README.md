@@ -14,8 +14,8 @@ $ npm start
 Visit `http://localhost:3000` to see the style guide.
 
 ## Scripts
-- `start`: Runs development server at `http://localhost:3000`
-- `build`: Builds and outputs css to `public/css/styles.css`
+- `start`: Run development server at `http://localhost:3000`
+- `build`: Build and output css to `public/css/styles.css`
 - `precommit` Tidy up the code before committing
 
 ## Structure
