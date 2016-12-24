@@ -1,4 +1,5 @@
-// Main palette
+// Core colors
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 $color-grey-dark: #2f343b;
 $color-grey-light: #e7ecef;
 $color-grey-lighter: #fafafa;
@@ -7,7 +8,8 @@ $color-beige: #e3cda4;
 $color-red: #703030;
 $color-green: #2d8a42;
 
-// UI specific colors
+// UI colors
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 $color-ui-primary: $color-grey-light;
 $color-ui-primary-outline: $color-beige;
 $color-ui-primary-text: $color-grey-dark;
@@ -17,5 +19,8 @@ $color-ui-dark-text: $color-grey-light;
 
 $color-ui-success: $color-green;
 $color-ui-success-color: $color-grey-lighter;
+
+$color-ui-link: $color-red;
+$color-ui-link-visited: darken($color-ui-link, 10%);
 
 $color-ui-danger: $color-red;

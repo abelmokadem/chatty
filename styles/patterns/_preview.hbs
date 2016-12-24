@@ -6,9 +6,22 @@
     <title>Chatty Style Guide</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <style>
+        {{#if _target.layout}}
+            html,
+            body {
+                overflow: hidden;
+                box-sizing: border-box;
+
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        {{/if}}
+    </style>
 </head>
 <body>
-
 
 {{{ yield }}}
 

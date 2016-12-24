@@ -1,0 +1,38 @@
+@import '../../node_modules/normalize.css/normalize';
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: $font-family;
+    font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: $font-color;
+}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+a
+{
+    color: $color-ui-link;
+
+    &:hover
+    {
+        color: $color-ui-link-visited;
+    }
+}
+
+// Box sizing
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
