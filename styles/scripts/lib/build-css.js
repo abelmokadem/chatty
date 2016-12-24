@@ -11,12 +11,13 @@ export async function buildCss() {
             outputStyle: 'compressed',
             sourceMap: 'src/styles.css.map'
         }, async function(err, result) {
-            await fsp.writeFile(path.join(process.cwd(), 'public/css/styles.css'), result.css.toString());
-            await fsp.writeFile(path.join(process.cwd(), 'public/css/styles.css.map'), result.map.toString());
-
             if (err) {
                 reject(err);
+                return;
             }
+
+            await fsp.writeFile(path.join(process.cwd(), 'public/css/styles.css'), result.css.toString());
+            await fsp.writeFile(path.join(process.cwd(), 'public/css/styles.css.map'), result.map.toString());
 
             resolve(result);
         });
