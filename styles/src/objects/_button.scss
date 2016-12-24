@@ -1,5 +1,14 @@
 .button
 {
+    $button-default-background: $color-white;
+    $button-default-color: $color-ui-primary-text;
+    $button-default-border-color: darken($button-default-background, 20%);
+
+    $button-success-background: $color-ui-success;
+    $button-success-color:  $color-ui-success-color;
+    $button-success-border-color: darken($button-success-background, 20%);
+
+
     font-size: 11px;
     font-weight: 600;
     line-height: 38px;
@@ -17,27 +26,28 @@
     letter-spacing: .1rem;
     text-transform: uppercase;
 
-    color: $color-ui-primary-text;
-    border: 1px solid darken($color-ui-primary, 10%);
+    color: $button-default-color;
+    border: 1px solid $button-default-border-color;
     border-radius: $base-radius;
-    background-color: #fff;
+    background-color: $button-default-background;
 
     &:hover,
     &:focus
     {
-        background-color: $color-grey-lighter;
+        background-color: darken($button-default-background, 10%);
     }
 
     // Modifiers
     &--success
     {
-        color: $color-ui-success-color;
-        background-color: $color-ui-success;
+        color: $button-success-color;
+        background-color: $button-success-background;
+        border-color: $button-success-border-color;
 
         &:hover,
         &:focus
         {
-            background-color: darken($color-ui-success, 10%);
+            background-color: darken($button-success-background, 10%);
         }
     }
 
