@@ -17,6 +17,9 @@ Visit `http://localhost:3000` to see the style guide.
 
 ```
 .
++-- docs                # Style guide documentation pages
++-- patterns            # Style guide implementation
++-- scripts             # Corresponds to the package.json scripts
 +-- src                 # ITCSS based structure
 |   +-- components      # Semantic components
 |   +-- generic         # Reset and base styling
@@ -24,4 +27,5 @@ Visit `http://localhost:3000` to see the style guide.
 |   +-- settings        # Variables
 |   +-- tools           # Mixins
 +-- .babelrc            # Babel configuration
++-- package.json        # 🤓
 ```
