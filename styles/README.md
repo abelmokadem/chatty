@@ -7,8 +7,9 @@ keep the SCSS tidy. The structure is based on
 
 Run the following commands:
 ``` bash
-$ npm install
-$ npm start
+$ npm install -g yarn
+$ yarn install
+$ yarn start
 ```
 
 Visit `http://localhost:3000` to see the style guide.
