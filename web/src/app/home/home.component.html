@@ -1,5 +1,74 @@
-<div class="home">
-  <cc-segment>
-    <h1>Welcome</h1>
-  </cc-segment>
-</div>
+<cc-layout class="home">
+  <div cc-layout-sidebar class="home__sidebar">
+    <div class="home__header">
+      <img src="/assets/images/logo.svg" alt="Logo" width="50" height="50">
+      <h1 class="home__title">Chatty</h1>
+      <small>Connect with your friends!</small>
+    </div>
+
+    <div class="home__form">
+      <form class="form">
+        <div class="form__container">
+          <div class="form__fields">
+            <label class="label">
+              <span class="label__description">Select a username</span>
+              <input class="label__input" type="text" placeholder="Username*">
+            </label>
+
+            <label class="label">
+              <span class="label__description">Select a channel</span>
+              <select class="label__select" name="channel">
+                <option value="development">Development</option>
+                <option value="general">General</option>
+                <option value="random">Random</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__rule"></div>
+          <div class="form__footer">
+            <button class="button button--submit" type="submit">Join channel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div cc-layout-main>
+  </div>
+</cc-layout>
+
+<!--<div class="subscribe">-->
+<!--<div class="header">-->
+<!--<h1 class="header__title">Get started</h1>-->
+<!--</div>-->
+
+<!--<div class="subscribe__container">-->
+<!--<div class="subscribe__content">-->
+<!--<img height="50" width="50" src="/assets/images/logo.svg" />-->
+
+<!--<form action="">-->
+<!--<div>-->
+<!--<label>-->
+<!--Choose a name-->
+<!--<input name="name" type="text">-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--<label>-->
+<!--Select a channel-->
+<!--<select name="channel">-->
+<!--<option value="development">Development</option>-->
+<!--<option value="general">General</option>-->
+<!--<option value="random">Random</option>-->
+<!--</select>-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--<button type="submit">Join channel</button>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->

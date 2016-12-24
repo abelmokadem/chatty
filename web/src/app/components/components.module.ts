@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SegmentComponent } from './segment/segment.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SegmentComponent
+    LayoutComponent
   ],
   exports: [
-    SegmentComponent
+    LayoutComponent
   ]
 })
 export class ComponentsModule { }
