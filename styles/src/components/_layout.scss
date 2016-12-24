@@ -1,11 +1,11 @@
 .layout
 {
+    $sidebar-background-color: $color-ui-dark-primary;
+    $sidebar-color: $color-ui-dark-text;
+
     display: flex;
 
     height: 100%;
-
-    $sidebar-background-color: $color-ui-dark-primary;
-    $sidebar-color: $color-ui-dark-text;
 
     &__sidebar
     {

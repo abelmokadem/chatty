@@ -1,5 +1,7 @@
 .form-control
 {
+    $border-color: darken($color-ui-primary, 10%);
+
     box-sizing: border-box;
     height: 38px;
     padding: 6px 10px;
@@ -10,7 +12,6 @@
     background-color: #fff;
     box-shadow: none;
 
-    $border-color: darken($color-ui-primary, 10%);
     appearance: none;
 
     &--textarea
