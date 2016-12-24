@@ -7,7 +7,7 @@ const fractal = create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Chatty styleguide');
+fractal.set('project.title', 'Chatty Style Guide');
 
 /*
  * Tell Fractal where to look for components.
