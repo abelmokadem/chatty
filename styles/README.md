@@ -1,6 +1,7 @@
 # Chatty Style Guide
 Style guide built using [fractal](http://fractal.build/). Runs [csscomb](http://csscomb.com/) as a precommit hook to 
-keep the scss tidy. 
+keep the SCSS tidy. The structure is based on 
+[ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) and uses BEM as a naming convention. 
 
 ## Getting started
 
@@ -14,7 +15,13 @@ Visit `http://localhost:3000` to see the style guide.
 
 ## Structure
 
-
 ```
-  
+.
++-- src                 # ITCSS based structure
+|   +-- components      # Semantic components
+|   +-- generic         # Reset and base styling
+|   +-- objects         # Non semantic components
+|   +-- settings        # Variables
+|   +-- tools           # Mixins
++-- .babelrc            # Babel configuration
 ```
