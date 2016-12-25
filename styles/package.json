@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.0.11",
+    "@frctl/mandelbrot": "git://github.com/tlenex/mandelbrot.git#feature/ie9-ie10-support",
     "node-sass-tilde-importer": "0.0.4",
     "normalize.css": "^5.0.0"
   },
