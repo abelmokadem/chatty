@@ -2,26 +2,23 @@
   $sidebar-background-color: $color-ui-dark-primary;
   $sidebar-color: $color-ui-dark-text;
 
-  display: flex;
-
   height: 100%;
 
   &__sidebar {
+    float: left;
+
+    width: 100%;
     max-width: 300px;
+    height: 100%;
 
     color: $sidebar-color;
     background: $sidebar-background-color;
-
-    flex: 1;
-
-    @media screen and (max-width: $breakpoint-sm-max) {
-      position: relative;
-      left: -100%;
-    }
   }
 
   &__main {
     position: relative;
+
+    float: right;
 
     background-size: cover;
 
