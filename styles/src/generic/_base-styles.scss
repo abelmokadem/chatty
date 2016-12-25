@@ -1,30 +1,26 @@
 @import '../../node_modules/normalize.css/normalize';
 
-html
-{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body
-{
-    font-family: $font-family;
-    font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
-    font-weight: 400;
-    line-height: 1.6;
+body {
+  font-family: $font-family;
+  font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
+  font-weight: 400;
+  line-height: 1.6;
 
-    color: $font-color;
+  color: $font-color;
 }
 
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-a
-{
-    color: $color-ui-link;
+a {
+  color: $color-ui-link;
 
-    &:hover
-    {
-        color: $color-ui-link-visited;
-    }
+  &:hover {
+    color: $color-ui-link-visited;
+  }
 }
 
 // Box sizing
@@ -32,17 +28,19 @@ a
 
 *,
 *:before,
-*:after
-{
-    box-sizing: inherit;
+*:after {
+  box-sizing: inherit;
 }
 
 // Forms
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-textarea, input, select {
-    display: inline-block;
+textarea,
+input,
+select {
+  display: inline-block;
 }
 
-fieldset, form {
-    display: block;
+fieldset,
+form {
+  display: block;
 }

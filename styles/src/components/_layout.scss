@@ -1,34 +1,30 @@
-.layout
-{
-    $sidebar-background-color: $color-ui-dark-primary;
-    $sidebar-color: $color-ui-dark-text;
+.layout {
+  $sidebar-background-color: $color-ui-dark-primary;
+  $sidebar-color: $color-ui-dark-text;
 
-    display: flex;
+  display: flex;
 
-    height: 100%;
+  height: 100%;
 
-    &__sidebar
-    {
-        max-width: 300px;
+  &__sidebar {
+    max-width: 300px;
 
-        color: $sidebar-color;
-        background: $sidebar-background-color;
+    color: $sidebar-color;
+    background: $sidebar-background-color;
 
-        flex: 1;
+    flex: 1;
 
-        @media screen and (max-width: $breakpoint-sm-max)
-        {
-            position: relative;
-            left: -100%;
-        }
+    @media screen and (max-width: $breakpoint-sm-max) {
+      position: relative;
+      left: -100%;
     }
+  }
 
-    &__main
-    {
-        position: relative;
+  &__main {
+    position: relative;
 
-        background-size: cover;
+    background-size: cover;
 
-        flex: 1;
-    }
+    flex: 1;
+  }
 }

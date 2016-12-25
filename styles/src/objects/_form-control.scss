@@ -1,29 +1,26 @@
-.form-control
-{
-    $border-color: darken($color-ui-primary, 10%);
+.form-control {
+  $border-color: darken($color-ui-primary, 10%);
 
-    box-sizing: border-box;
-    height: 38px;
-    padding: 6px 10px;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 6px 10px;
 
-    border: 1px solid lighten($border-color, 8.8%);
-    border-radius: $base-radius;
-    outline: 0;
-    background-color: #fff;
-    box-shadow: none;
+  border: 1px solid lighten($border-color, 8.8%);
+  border-radius: $base-radius;
+  outline: 0;
+  background-color: #FFFFFF;
+  box-shadow: none;
 
-    appearance: none;
+  appearance: none;
 
-    &--textarea
-    {
-        min-height: 65px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
+  &--textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 
-    &--radio,
-    &--checkbox
-    {
-        display: inline;
-    }
+  &--radio,
+  &--checkbox {
+    display: inline;
+  }
 }
