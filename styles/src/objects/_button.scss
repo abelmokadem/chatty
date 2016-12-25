@@ -50,8 +50,8 @@
       cursor: not-allowed;
 
       color: lighten($color-ui-primary-text, 30%);
-      background-color: $color-grey-light;
       border-color: $button-default-border-color;
+      background-color: $color-grey-light;
     }
   }
 }
