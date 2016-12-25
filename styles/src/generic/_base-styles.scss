@@ -36,3 +36,13 @@ a
 {
     box-sizing: inherit;
 }
+
+// Forms
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+textarea, input, select {
+    display: inline-block;
+}
+
+fieldset, form {
+    display: block;
+}
