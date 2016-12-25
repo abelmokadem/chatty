@@ -4,7 +4,7 @@
   $button-default-border-color: darken($button-default-background, 20%);
   $button-success-background: $color-ui-success;
   $button-success-color: $color-ui-success-color;
-  $button-success-border-color: darken($button-success-background, 20%);
+  $button-success-border-color: darken($button-success-background, 5%);
 
   font-size: 11px;
   font-weight: 600;
@@ -51,6 +51,7 @@
 
       color: lighten($color-ui-primary-text, 30%);
       background-color: $color-grey-light;
+      border-color: $button-default-border-color;
     }
   }
 }
