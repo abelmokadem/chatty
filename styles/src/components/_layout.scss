@@ -5,23 +5,29 @@
   height: 100%;
 
   &__sidebar {
+    display: block;
     float: left;
 
-    width: 100%;
+    width: 300px;
     max-width: 300px;
     height: 100%;
 
     color: $sidebar-color;
     background: $sidebar-background-color;
+
+    transition: width 500ms;
+    transform: translate3d(0, 0, 0);
+
+    &--is-collapsed {
+      width: 50px;
+    }
   }
 
   &__main {
-    position: relative;
-
-    float: right;
+    display: block;
+    overflow:hidden;
 
     background-size: cover;
-
-    flex: 1;
+    height: 100%;
   }
 }

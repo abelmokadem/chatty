@@ -1,3 +1,13 @@
+<div class="layout">
+    <div class="layout__sidebar">
+        {{> @sidebar }}
+    </div>
+
+    <div class="layout__main">
+        This is the main
+    </div>
+</div>
+
 <!-- Todo: Workaround for fractal limitation -->
 <!-- See https://github.com/frctl/fractal/issues/89 -->
 <style>
@@ -12,12 +22,15 @@
     }
 </style>
 
-<div class="layout">
-    <div class="layout__sidebar">
-        {{> @sidebar }}
-    </div>
+<script type="text/javascript">
+    $(function () {
+        var $sidebarMenus = $('.sidebar__menu');
 
-    <div class="layout__main">
-        This is the main
-    </div>
-</div>
+        $sidebarMenus.click(function (event) {
+            event.preventDefault();
+
+            $(event.target).parents('.layout__sidebar')
+                    .toggleClass('layout__sidebar--is-collapsed');
+        });
+    });
+</script>
