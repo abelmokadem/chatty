@@ -2,25 +2,28 @@
   $sidebar-background-color: $color-ui-dark-primary;
   $sidebar-color: $color-ui-dark-text;
 
+  position: relative;
+  left: 0;
+
   height: 100%;
+
+  transition: left 500ms;
+  transform: translate3d(0, 0, 0);
+
+  &--is-collapsed {
+    left: -250px;
+  }
 
   &__sidebar {
     display: block;
     float: left;
 
-    width: 300px;
+    width: 100%;
     max-width: 300px;
     height: 100%;
 
-    transition: width 500ms;
-    transform: translate3d(0, 0, 0);
-
     color: $sidebar-color;
     background: $sidebar-background-color;
-
-    &--is-collapsed {
-      width: 50px;
-    }
   }
 
   &__main {
