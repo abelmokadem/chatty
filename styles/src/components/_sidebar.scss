@@ -9,12 +9,13 @@
   color: $color-ui-dark-text;
   background: $color-ui-dark-primary;
 
-  &__headerContainer {
+  &__header-container {
     display: table-row;
   }
 
-  &__mainContainer {
+  &__main-container {
     display: table-row;
+
     height: 100%;
   }
 
@@ -23,8 +24,9 @@
   }
 
   &__main {
-    vertical-align: middle;
     display: table-cell;
+
+    vertical-align: middle;
   }
 
   &__menu {
